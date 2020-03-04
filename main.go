@@ -49,6 +49,7 @@ func main() {
 		"certificates do not need to be re-issued.")
 
 	if err := run(); err != nil {
+		log.Printf("%v", err)
 		os.Exit(1)
 	}
 }
